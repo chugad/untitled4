@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class Book extends Product {
-    String author;
+    private String author;
 
 
     public Book(int id, String name, int price, String author) {

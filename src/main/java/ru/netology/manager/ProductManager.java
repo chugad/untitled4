@@ -21,7 +21,7 @@ public class ProductManager {
 
         Product[] result = new Product[0];
         for (Product product : repository.findAll()) {
-            if (matches(product, search) == true) {
+            if (matches(product, search)) {
                 Product[] tmp = new Product[result.length + 1];
                 System.arraycopy(result, 0, tmp, 0, result.length);
                 tmp[tmp.length - 1] = product;
